@@ -13,8 +13,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/category" element={<Category />} />
-        <Route path="/debate" element={<Debate />} />
+        <Route path="/categories" element={<Category />} />
+        <Route path="/debate/:id" element={<Debate />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
