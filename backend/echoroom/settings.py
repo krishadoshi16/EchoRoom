@@ -13,9 +13,11 @@ from __future__ import annotations
 from datetime import timedelta
 from pathlib import Path
 import environ
-import pymysql
-
-pymysql.install_as_MySQLdb()
+try:
+    import pymysql
+    pymysql.install_as_MySQLdb()
+except ImportError:
+    pass
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
